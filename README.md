@@ -7,7 +7,7 @@ To run the Application:
 
 1. Clone the Repo
 2. Setting Up the Front End:
-   -> Navigate to the my-app folder and run "npm i"
+   -> Navigate to the App-to-uplaod-File-to-SharePoint-site-via-Syncing- folder and run "npm i"
    -> run "npm start"
 3. Setting Up the backend:
    -> Navigate to the backend folder and run "pip install -r requirements.txt"
