@@ -1,23 +1,30 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# virtual environments
+venv
+vapi
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Python files
+*.pyc
+__pycache__
 
-# testing
-/coverage
+# Python Notebook dot files
+.ipynb*
 
-# production
-/build
+# Secret environment settings
+env
 
-# misc
+# Node and Webpack files
+node_modules
+npm-debug.log
+webpack-stats*
+
+# Static assests
+staticfiles
+static_cdn
+media_cdn
+
+# Ignore sqlite
+db.sqlite3
+
+# Apple files
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+passwo*
