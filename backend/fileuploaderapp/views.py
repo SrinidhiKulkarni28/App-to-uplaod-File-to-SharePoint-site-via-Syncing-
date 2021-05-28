@@ -53,7 +53,7 @@ class UploadViewSet(ViewSet):
             
 
             
-            with open(r'C:\Users\srinidhi_kulkarni1\Dell Technologies\Share Point File Upload - Uploads\\'+file_uploaded.name, 'wb+') as destination:
+            with open(r'Path of the SharePoint synced Folder'+file_uploaded.name, 'wb+') as destination:
                     for chunk in file_uploaded.chunks():
                         destination.write(chunk)
                     logger.error("pushed","pushed")
@@ -64,7 +64,7 @@ class UploadViewSet(ViewSet):
     def delete(self, request):
         logger.error("the delete query params are:",request.GET.get('filename'))
         filename = request.GET.get('filename')
-        os.remove(r'C:\Users\srinidhi_kulkarni1\Dell Technologies\Share Point File Upload - Uploads\\'+filename)
+        os.remove(r'Path of the SharePoint synced Folder'+filename)
         response = "The {} file deleted successfully".format(filename)
         
         return Response(response)
